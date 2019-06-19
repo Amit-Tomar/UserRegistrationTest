@@ -7,9 +7,9 @@
 2. e-mail IDs in system are unique.
 3. User name, email id and passwords can not be blank.
 4. JWT based auth token, expires in 300 seconds.
-5. DB used is SQLite hosted on Droplet itself.
+5. Implemented in Python-Flask. DB used is SQLite hosted on Digital Ocean Droplet.
 6. To test, token should be passed as Bearer Token in Authorization header.
-7. Passwords are stored in DB has salted hashes.
+7. Passwords are stored in DB as salted hash.
 
 ## HTTP Codes in response:
 
@@ -21,3 +21,4 @@
 
 1. No way of verifying if the user is actual owner of the email id he is registering with.
 2. Invalidating token.
+3. Running only using Gunicorn. To add nGINX.
