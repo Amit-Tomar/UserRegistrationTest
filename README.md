@@ -9,6 +9,7 @@
 4. JWT based auth token, expires in 300 seconds.
 5. DB used is SQLite hosted on Droplet itself.
 6. To test, token should be passed as Bearer Token in Authorization header.
+7. Passwords are stored in DB has salted hashes.
 
 ## HTTP Codes in response:
 
